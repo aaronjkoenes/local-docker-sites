@@ -1,0 +1,16 @@
+# Ignore environment files
+.env
+
+# Ignore Docker data and logs
+proxy/certs/
+proxy/vhost.d/
+proxy/html/
+proxy/nginx.conf
+proxy/nginx-proxy.log
+
+# Node modules (for Discord bot)
+discord-bot/node_modules/
+discord-bot/package-lock.json
+
+# Ignore local images
+image-server/images/

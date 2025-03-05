@@ -9,8 +9,9 @@ proxy/nginx.conf
 proxy/nginx-proxy.log
 
 # Node modules (for Discord bot)
-discord-bot/node_modules/
-discord-bot/package-lock.json
+gomezbot/node_modules/
+gomezbot/package-lock.json
+gomezbot/.env
 
 # Ignore local images
 image-server/images/

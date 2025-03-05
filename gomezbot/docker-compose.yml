@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  gomezbot:
+    build: .
+    container_name: gomezbot
+    restart: always
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - BOT_PREFIX=${BOT_PREFIX:-!}  # Default prefix is "!"
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    external: true

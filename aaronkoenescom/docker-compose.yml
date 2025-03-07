@@ -6,9 +6,10 @@ services:
     container_name: aaronkoenescom
     restart: always
     volumes:
-      - ./html:/usr/share/nginx/html:ro
+      - ./web-root:/usr/share/nginx/html:ro
+      - ./site.conf:/etc/nginx/conf.d/site.conf:ro
     environment:
-      - VIRTUAL_HOST=resume.local
+      - VIRTUAL_HOST=aaronkoenes.com
     networks:
       - proxy-network
 

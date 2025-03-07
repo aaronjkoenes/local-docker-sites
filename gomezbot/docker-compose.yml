@@ -7,7 +7,8 @@ services:
     restart: always
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
-      - BOT_PREFIX=${BOT_PREFIX:-!}  # Default prefix is "!"
+      - BOT_PREFIX=${BOT_PREFIX:-!}
+      - VIRTUAL_HOST=gomezbot.quartekoen.com
     networks:
       - proxy-network
 

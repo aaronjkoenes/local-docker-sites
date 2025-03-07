@@ -15,8 +15,6 @@ services:
       - ./vhost.d:/etc/nginx/vhost.d
       - ./html:/usr/share/nginx/html
       - ./conf.d:/etc/nginx/conf.d
-    environment:
-      - DEFAULT_HOST=resume.local
     networks:
       - proxy-network
 
